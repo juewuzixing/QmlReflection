@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>flower-bamboo.png</file>
+        <file>TextReverse.qml</file>
+        <file>PictureReverse.qml</file>
+    </qresource>
+</RCC>
