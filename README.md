@@ -1,2 +1,2 @@
 # QmlReflection
-Í¼Æ¬¼°ÎÄ×Öµ¹Ó°
+picture and the text reflection
