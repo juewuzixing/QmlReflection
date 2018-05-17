@@ -8,9 +8,10 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQuickView engine;
-//    engine.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
-    engine.setSource(QUrl(QStringLiteral("qrc:/TextReverse.qml")));
+    engine.setSource(QUrl(QStringLiteral("qrc:/main.qml")));
+//    engine.setSource(QUrl(QStringLiteral("qrc:/TextReverse.qml")));
 //    engine.setSource(QUrl(QStringLiteral("qrc:/PictureReverse.qml")));
+//    engine.setSource(QUrl(QStringLiteral("qrc:/OtherTextReverse.qml")));
     engine.show();
 
     return app.exec();

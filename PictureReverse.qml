@@ -8,19 +8,19 @@ Rectangle {
     color: "black"
 
     Image {
-        id: img
+        id: image
         source: "qrc:/flower-bamboo.png"
         anchors.centerIn: parent
     }
 
     ShaderEffect {
-        anchors.top: img.bottom
-        width: img.width
-        height: img.height
-        anchors.left: img.left
+        anchors.top: image.bottom
+        width: image.width
+        height: image.height
+        anchors.left: image.left
 
-        property variant source: img
-        property size sourceSize: Qt.size(0.5 / img.width, 0.5 / img.height)
+        property variant source: image
+        property size sourceSize: Qt.size(0.5 / image.width, 0.5 / image.height)
 
         fragmentShader: "
             varying highp vec2 qt_TexCoord0;

@@ -7,7 +7,7 @@ Rectangle {
     height: 480
     color: "black"
     Text {
-        id: src
+        id: text
         text: "890098"
         color: "red"
         font.pixelSize: 25
@@ -17,22 +17,22 @@ Rectangle {
 
     Item {
         anchors {
-            top: src.bottom
-            left: src.left
+            top: text.bottom
+            left: text.left
         }
         opacity: 0.5
-        width: src.width
-        height: src.height
+        width: text.width
+        height: text.height
         layer.enabled: true
         layer.effect: Component {
             ShaderEffectSource {
-                sourceItem: src
+                sourceItem: text
             }
         }
         transform: Rotation {
-            origin.x: src.width / 2
-            origin.y: src.height / 2
-            axis {x: 1; y: 0; z: 0}
+            origin.x: text.width / 2
+            origin.y: text.height / 2
+            axis { x: 1; y: 0; z: 0 }
             angle: 180
         }
     }

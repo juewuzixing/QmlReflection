@@ -2,33 +2,32 @@ import QtQuick 2.0
 import QtQuick.Controls 1.4
 
 Rectangle {
-    id: name
     width: 480
     height: 480
     color: "black"
     Image {
-        id: src
+        id: image
         source: "qrc:/flower-bamboo.png"
         anchors.centerIn: parent
     }
     Item {
         anchors {
-            top: src.bottom
-            left: src.left
+            top: image.bottom
+            left: image.left
         }
         opacity: 0.5
-        width: src.width
-        height: src.height
+        width: image.width
+        height: image.height
         layer.enabled: true
         layer.effect: Component {
             ShaderEffectSource {
-                sourceItem: src
+                sourceItem: image
             }
         }
         transform: Rotation {
-            origin.x: src.width / 2
-            origin.y: src.height / 2
-            axis {x: 1; y: 0; z: 0}
+            origin.x: image.width / 2
+            origin.y: image.height / 2
+            axis { x: 1; y: 0; z: 0 }
             angle: 180
         }
     }

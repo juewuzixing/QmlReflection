@@ -4,5 +4,6 @@
         <file>flower-bamboo.png</file>
         <file>TextReverse.qml</file>
         <file>PictureReverse.qml</file>
+        <file>OtherTextReverse.qml</file>
     </qresource>
 </RCC>
